@@ -5,31 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chayaa</title>
 <style>
-body{
-margin:0;
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#000000;
-font-family:Arial;
-}
-.card{
-background:#111111;
-border:1px solid #333;
-padding:50px 40px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 0 30px #222;
-}
-h1{color:#ffffff; margin:0 0 10px 0; font-size:42px;}
-p{color:#888888; margin:0; font-size:18px;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#000;font-family:'Inter',sans-serif;overflow:hidden;}
+.glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle, rgba(255,255,255,0.09) 0%, transparent 70%);filter:blur(10px);}
+.card{position:relative;background:rgba(18,18,18,0.9);border:1px solid #222;padding:35px 35px 30px;border-radius:28px;text-align:center;width:320px;backdrop-filter:blur(20px);box-shadow:0 0 100px rgba(255,255,255,0.06);}
+.photo{width:100%;height:420px;object-fit:cover;border-radius:20px;margin-bottom:22px;border:1px solid #2a2a2a;}
+h1{margin:0;color:#fff;font-size:32px;letter-spacing:-1px;}
+.tag{color:#777;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:6px 0 20px 0;}
+.btn{ display:inline-block; background:#fff; color:#000; padding:12px 28px; border-radius:100px; text-decoration:none; font-weight:700; font-size:14px; transition:0.3s;}
+.btn:hover{transform:scale(1.05); background:#eee;}
 </style>
 </head>
 <body>
+<div class="glow"></div>
 <div class="card">
-<h1>Hello, I am Chayaa 🖤</h1>
-<p>my first website</p>
+<img class="photo" src="photo.jpg" alt="Chayaa">
+<h1>Chayaa 🖤</h1>
+<div class="tag">My First Website</div>
+<a class="btn" href="https://instagram.com" target="_blank">Follow Me</a>
 </div>
 </body>
 </html>
